@@ -17,7 +17,8 @@ main{
 }
 main .title {
     text-align: center;
-    padding: 120px 0;
+    padding-top: 120px ;
+    margin-bottom: 198px;
 }
 main .title p {
     font-size: 0.75em;
@@ -44,12 +45,39 @@ main .contents > * {
     border-radius: 8px;
     letter-spacing:-0.02em ;
 }
-main .contents #user_birthday {
+main .contents #user_birthday {/* input태그 입력 전 상태 */
     border: 1px solid #000;
-    font-size: 0.875em;
+    font-size: 0.875em; 
+    color: #000;/* 사용자가 입력했을 떄 글자색상 */
+    text-align: center;
+
 }
+/* input태그의 placeholder(안내문) 전용 선택자 글자선택 */
+main .contents #user_birthday::placeholder {color:rgba(0,0,0,0.4);}
+/* input태그가 활성화되었을 떄(커서가 들어오고 입력되는 상황) */
+/* 버튼 */
+main .contents #user_birthday:focus {border-color:#f00;}
 main .contents #birthday_result_btn {
     background-color: #242424;
     color: #fff;
     font-weight: 600px;
+}
+main .month  {
+    background-color: #fff;
+    width: 303px; height: 253px;
+    margin: 15px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+main .month h1 {
+    letter-spacing: -0.02em;
+}
+main .month p {
+    letter-spacing: -0.02em;
+}
+main .month .you {
+    letter-spacing: -0.02em;
+    line-height: 1.5;
 }

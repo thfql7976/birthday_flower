@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href=https://www.flaticon.com/kr/free-icon/sakura_7096435 type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <main>
@@ -17,10 +18,15 @@
             <h1>나의 탄생화 찾기</h1>
         </div>
         <div class="contents">
-            <input id="user_birthday" placeholder="태어난 달을 숫자로 입력해주세요">
+            <input id="user_birthday" onclick="a()" placeholder="태어난 달을 숫자로 입력해주세요">
             <button id="birthday_result_btn">나의 꽃과 꽃말 만나기</button>
             <!-- a태그는 클릭 시 다른페이지로 이동 -->
             <!-- button태그 클릭 시 범용기능 동적재현 -->
+        </div>
+        <div class="month">
+            <h1>bithday month 12</h1>
+            <p>꽃말 : 자기에,자존심,외로움</p>
+            <p class="you">당신의 탄생화는<em>'수선화'</em> 입니다</p>
         </div>
     </main>
 </body>
